@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+   
+
+
+</body>
+<script>
+    // let arr = [1,2,3,4,5,6,[1,2,3,4]]
+    // console.log(arr.flat())
+    // let arr = [1,2,3,4,56];
+    // console.log(arr.filter(item=>item>3));
+    // console.log(arr.slice(0,3))
+    // console.log(1)
+    // console.log(2)
+    // setInterval(() => {
+    //     console.log(3)
+    // }, 1000);
+    // console.log(4)
+    // console.log(5)
+    //  let a = {
+    //     rollnumber : 2003630100111,
+    //     name : "ompal",
+    //     depid : "cse"
+    //  }
+    //  console.log(a.rollnumber)
+    //  console.log(a.name)
+    //  console.log(a.depid)
+    //  a.rollnumber = 233;
+    //  console.log(a.rollnumber)
+
+
+    //  let array = [1,2,3,4,5]
+    //  array.map((item,index) =>{
+    //     console.log(item)
+    //  } )
+
+
+
+
+
+    //  const randomcolor = ()=>{
+    //     let hexcolor = Math.floor(Math.random()*86566645).toString(16);
+    //     return "#" + ("000000" + hexcolor).slice(-6);
+    //  };
+
+    //  let intervalId;
+    //  const startInterval =() =>{
+    //     const changebg = () =>{
+    //         document.body.style.backgroundColor = randomcolor();
+    //         console.log("the time is", Date.now(),document.body);
+    //     };
+    //     !intervalId ? (intervalId = setInterval(changebg, 1000)) : null
+    // };
+    //  const stopInterval = () =>{
+    //     clearInterval(intervalId);
+    //     intervalId = null;
+    //  };
+     
+    //  document.querySelector("#start").addEventListener("click", startInterval);
+    //  document.querySelector("#stop").addEventListener("click", stopInterval);
+     
+
+    // const firstFunction = (callback) =>{
+    //     setTimeout(() =>{
+    //         console.log("hello");
+    //         callback();
+    //     }, 1000);
+    // };
+
+    // const sFunction = (callback) =>{
+    //     setTimeout(() =>{
+    //         console.log("shello");
+    //         callback();
+    //     }, 2000);
+    // };
+
+    // const tFunction = (callback) =>{
+    //     setTimeout(() =>{
+    //         console.log("thello");
+    //         callback();
+    //     }, 3000);
+    // };
+    // firstFunction(() =>{
+    //     sFunction(() =>{
+    //         tFunction(() => console.log("all done"));
+    //     });
+    // });
+
+//     let p = new Promise((resolve,reject) =>{
+//         let a = 1+1;
+//         if(a == 2){
+//             resolve("succes");
+//         }else{
+//             reject("faile");
+//         }
+//     });
+
+//     p.then((message) => console.log("msg from promise" ,message)).catch(
+//         (message) =>{
+//             console.log("rejection message",message);
+
+//         }
+//     );
+
+
+
+//  const firstFunction =() =>{
+//     return new Promise ((resolve,reject)=>{
+//         if (1){
+//             setTimeout(() =>{
+//                 console.log("hello");
+//                 resolve();
+//             }, 3000);
+//         } else {
+//             reject("rejection");
+//         }
+//     });
+//  };
+
+//  const sFunction =() =>{
+//     return new Promise ((resolve,reject)=>{
+//         if (1){
+//             setTimeout(() =>{
+//                 console.log("second hello");
+//                 resolve();
+//             }, 2000);
+//         } else {
+//             reject("rejection");
+//         }
+//     });
+//  };
+
+//  const tFunction =() =>{
+//     return new Promise ((resolve,reject)=>{
+//         if (1){
+//             setTimeout(() =>{
+//                 console.log("third hello");
+//                 resolve();
+//             }, 1000);
+//         } else {
+//             reject("rejection");
+//         }
+//     });
+//  };
+
+// const doas = async() =>{
+
+//     try{
+ 
+//     await firstFunction()
+//     await sFunction()
+//     await tFunction()
+//     console.log('done')
+//     }catch(err){
+//         console.log(err)
+//     }
+// } 
+// doas()
+
+// const getName = async () =>{
+//     await my("dosometing")
+//     console.log
+// }
+
+let a1 = [1,2,3,4,5,6];
+let a2 = [9,7,6,5,4,9];
+let a3 = [...a1,...a2];
+console.log(a3);
+
+const [z,x,r,h] = a3;
+console.log(r)
+
+
+</script>
+
+</html>
